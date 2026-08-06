@@ -1,3 +1,5 @@
+import { ContactForm } from "@/components/site/ContactForm";
+
 const CONTACT_ITEMS = [
   {
     label: "Telefon",
@@ -61,7 +63,7 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-start">
+        <div className="mt-14 grid gap-8 md:grid-cols-2 md:items-start">
           <div className="grid gap-4">
             {CONTACT_ITEMS.map((item) => (
               <a
@@ -98,17 +100,19 @@ export function Contact() {
                 </span>
               </a>
             ))}
+
+            <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
+              <iframe
+                title="Lokacija - Beograd"
+                src="https://www.google.com/maps?q=Beograd,Srbija&output=embed"
+                className="h-56 w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
-            <iframe
-              title="Lokacija - Beograd"
-              src="https://www.google.com/maps?q=Beograd,Srbija&output=embed"
-              className="h-80 w-full md:h-full md:min-h-[320px]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <ContactForm />
         </div>
       </div>
     </section>

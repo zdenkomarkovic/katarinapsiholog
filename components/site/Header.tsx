@@ -23,8 +23,8 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="Katarina Hess logo"
-            width={40}
-            height={40}
+            width={64}
+            height={64}
             className="h-16 w-16 rounded-full object-cover"
             priority
           />

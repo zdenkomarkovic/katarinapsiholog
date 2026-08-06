@@ -19,8 +19,8 @@ export function Footer() {
               <Image
                 src="/logo.png"
                 alt="Katarina Hess logo"
-                width={40}
-                height={40}
+                width={88}
+                height={88}
                 className="h-22 w-22 rounded-full object-cover"
               />
               <span className="font-serif text-lg text-primary-dark">Katarina Hess</span>

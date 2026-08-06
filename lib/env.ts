@@ -8,10 +8,10 @@ const envSchema = z.object({
   NEXT_PUBLIC_SITE_NAME: z.string().default("My Site"),
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
 
-  // Dodaj po potrebi:
-  // NEXT_PUBLIC_GA_MEASUREMENT_ID: z.string().optional(),
-  // DATABASE_URL: z.string().url(),
-  // AUTH_SECRET: z.string().min(32),
+  MAILJET_API_KEY: z.string().optional(),
+  MAILJET_SECRET_KEY: z.string().optional(),
+  SITE_MAIL_SENDER: z.string().email().optional(),
+  SITE_MAIL_RECEIVER: z.string().email().optional(),
 });
 
 // Ovo ce baciti gresku ako env varijable nisu ispravno postavljene
